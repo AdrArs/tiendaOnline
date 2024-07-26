@@ -1,5 +1,7 @@
 import {useProductStore} from "../store/products.js";
 import {Link} from "react-router-dom";
+import React from "react";
+import NavBar from "./NavBarComponent.jsx";
 
 const CardComponent = () => {
 
@@ -7,7 +9,9 @@ const CardComponent = () => {
 
   return (
     <>
-        <h1 className="text-3xl text-center font-bold">Tecnología</h1>
+      <NavBar/>
+
+      <h1 className="text-3xl text-center font-bold">Tecnología</h1>
 
       <div className="max-w-[900px] mx-auto pl-4">
         <Link to={"/dashboard"}>
